@@ -7,17 +7,17 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0">
+      {/* Background with gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brabus-black via-brabus-dark to-brabus-black">
         <Image
-          src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop"
-          alt="Premium automotive - moody lighting"
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+          alt="Brand strategy and analytics"
           fill
           priority
-          className="object-cover"
+          className="object-cover opacity-30"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-brabus-black/70 via-brabus-black/50 to-brabus-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brabus-black/80 via-brabus-black/60 to-brabus-black" />
       </div>
 
       {/* Content */}
@@ -42,7 +42,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6, ease: [0.65, 0, 0.35, 1] }}
             className="text-xl sm:text-2xl md:text-3xl text-chrome-muted max-w-2xl mx-auto font-light"
           >
-            Performance Redefined
+            Brand Strategy & Growth
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -50,8 +50,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8, ease: [0.65, 0, 0.35, 1] }}
             className="text-base sm:text-lg text-chrome-muted/80 max-w-xl mx-auto"
           >
-            Dark luxury meets minimalist design. Experience the future of
-            automotive excellence.
+            Data-driven insights for brand building, marketing excellence, and
+            sustainable growth.
           </motion.p>
         </motion.div>
 
@@ -65,7 +65,7 @@ export default function Hero() {
             href="#product"
             className="inline-flex items-center justify-center px-8 py-4 text-base font-medium bg-gold-accent text-brabus-black rounded-full hover:bg-gold-light hover:scale-105 hover:shadow-[0_0_30px_rgba(201,169,98,0.4)] transition-all duration-300"
           >
-            Explore Product
+            View Analysis
           </Link>
           <Link
             href="#features"

@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const footerLinks = [
-  { href: "#product", label: "Product" },
+  { href: "#product", label: "Analysis" },
   { href: "#features", label: "Features" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
@@ -35,7 +35,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-white/5">
         <p className="text-sm text-chrome-muted/70 text-center md:text-left">
-          &copy; {new Date().getFullYear()} MEVONE. All rights reserved.
+          &copy; {new Date().getFullYear()} MEVONE Software. All rights reserved.
         </p>
       </div>
     </footer>

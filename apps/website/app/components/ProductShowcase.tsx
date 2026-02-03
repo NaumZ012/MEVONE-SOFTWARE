@@ -3,35 +3,35 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const products = [
+const analyses = [
   {
     id: 1,
-    title: "Precision Engineering",
-    subtitle: "Crafted for excellence",
+    title: "Brand Strategy",
+    subtitle: "Positioning & Identity",
     description:
-      "Every detail designed with purpose. Performance that speaks for itself.",
+      "How leading brands define their identity and carve out distinct market positions. Analysis of brand architecture, messaging frameworks, and competitive differentiation.",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
     dark: true,
   },
   {
     id: 2,
-    title: "Sleek Design",
-    subtitle: "Minimalist aesthetic",
+    title: "Marketing Effectiveness",
+    subtitle: "Channels & ROI",
     description:
-      "Clean lines meet premium materials. A statement in modern automotive design.",
+      "Data-driven breakdown of marketing performance across channels. Understanding what drives awareness, conversion, and customer lifetime value in the digital age.",
     image:
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1983&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
     dark: false,
   },
   {
     id: 3,
-    title: "Performance First",
-    subtitle: "Uncompromising power",
+    title: "Growth Analytics",
+    subtitle: "Scaling & Retention",
     description:
-      "Engineered for those who demand the extraordinary. Pure driving experience.",
+      "How brands achieve sustainable growth through acquisition, activation, retention, and expansion. Metrics, benchmarks, and playbooks from high-growth companies.",
     image:
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
     dark: true,
   },
 ];
@@ -39,15 +39,15 @@ const products = [
 export default function ProductShowcase() {
   return (
     <section id="product" className="scroll-mt-20">
-      {products.map((product, index) => (
+      {analyses.map((item, index) => (
         <motion.div
-          key={product.id}
+          key={item.id}
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: [0.65, 0, 0.35, 1] }}
           className={`min-h-[80vh] flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 px-4 sm:px-6 lg:px-8 py-24 ${
-            product.dark ? "bg-brabus-black" : "bg-brabus-dark"
+            item.dark ? "bg-brabus-black" : "bg-brabus-dark"
           } ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
         >
           {/* Image */}
@@ -57,8 +57,8 @@ export default function ProductShowcase() {
             transition={{ duration: 0.4, ease: [0.65, 0, 0.35, 1] }}
           >
             <Image
-              src={product.image}
-              alt={product.title}
+              src={item.image}
+              alt={item.title}
               fill
               className="object-cover transition-all duration-500 group-hover:brightness-110"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -75,7 +75,7 @@ export default function ProductShowcase() {
               transition={{ delay: 0.2 }}
               className="text-gold-accent font-medium tracking-wider uppercase text-sm"
             >
-              {product.subtitle}
+              {item.subtitle}
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, x: -20 }}
@@ -84,7 +84,7 @@ export default function ProductShowcase() {
               transition={{ delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight"
             >
-              {product.title}
+              {item.title}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: -20 }}
@@ -93,7 +93,7 @@ export default function ProductShowcase() {
               transition={{ delay: 0.4 }}
               className="text-lg text-chrome-muted leading-relaxed"
             >
-              {product.description}
+              {item.description}
             </motion.p>
           </div>
         </motion.div>

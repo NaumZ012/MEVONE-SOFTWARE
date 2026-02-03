@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MEVONE | Performance Redefined",
+  title: "MEVONE | Brand Strategy & Growth",
   description:
-    "Premium automotive experience. Dark luxury meets minimalist design.",
+    "Data-driven analysis on brands, marketing, and growth. Insights for brand building, marketing excellence, and sustainable scaling.",
 };
 
 export default function RootLayout({

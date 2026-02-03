@@ -34,7 +34,7 @@ export default function CTA() {
             href="#product"
             className="inline-flex items-center justify-center px-10 py-4 text-base font-medium border border-chrome-muted/50 text-white rounded-full hover:border-gold-accent hover:text-gold-accent transition-all duration-300"
           >
-            Explore Product
+            View Analysis
           </Link>
         </div>
       </motion.div>

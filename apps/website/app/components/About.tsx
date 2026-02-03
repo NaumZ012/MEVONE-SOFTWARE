@@ -22,10 +22,10 @@ export default function About() {
             Born from a vision of excellence
           </h2>
           <p className="text-lg text-chrome-muted leading-relaxed">
-            MEVONE represents the fusion of premium automotive heritage with
-            forward-thinking design. We believe in creating experiences that
-            transcend the ordinary—where every detail matters and performance
-            meets artistry.
+            MEVONE delivers data-driven analysis on brands, marketing, and
+            growth. We help businesses understand what makes brands succeed—from
+            positioning and identity to acquisition, retention, and scaling. Our
+            insights combine rigorous analytics with strategic thinking.
           </p>
         </motion.div>
       </div>
